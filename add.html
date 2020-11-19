@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html >
+  <head>
+
+    <title>add.html</title>
+  </head>
+  <style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 2px 2px 2px black;
+
+}
+
+li {
+  display: inline;
+  float: left;
+  box-shadow: 2px 2px 2px black;
+}
+
+
+
+li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px black;
+}
+.MITHUNA{
+  background-color: yellow;
+}
+a{
+  color: black;
+  padding: 3PX 2PX;
+  text-decoration: none;
+}
+table, th, td {
+  border: none
+  border-collapse: collapse;
+  padding: 2px;
+  text-align:left;
+}
+body{
+  background-color: #dcdee0;
+}  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+
+
+li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+.MITHUNA{
+  background-color: yellow;
+}
+a{
+  color: black;
+  padding: 3PX 2PX;
+  text-decoration: none;
+}
+table, th, td {
+  border: none
+  border-collapse: collapse;
+  padding: 2px;
+  text-align:left;
+}
+body{
+  background-color: #dcdee0;
+}
+.form
+{
+  border:1px solid #f1f1f1;
+  height: 145px;
+  width: 80%;
+  background-color:white;
+  box-shadow: 0px 4px 4px 4px #a7a7a8;
+  padding-top:0px;
+  margin-top:35px;
+}
+
+#Name
+{
+  height:20px;
+  width:100%;
+  border:3px solid #f1f1f1;
+}
+#text{
+  text-align:left;
+  font-weight: bold;
+  padding-right: 10px;
+  margin-left: 10px;
+  line-height: 50px;
+
+}
+.add{
+  background-color:blue;
+  color:white;
+  border:none;
+  float:left;
+  padding-right:10px;
+  margin-left:5px;
+  height:30px;
+  width:50px;
+  cursor: pointer;
+}
+#mithu{
+  font-size:15px;
+  text-align: left;
+  margin-left:2px;
+  box-sizing: border-box;
+  border:3px solid #f1f1f1;
+  padding:4px 4px;
+  height:30px;
+  margin-top:1px;
+ background-color: #ded5d5;
+
+}
+
+
+  </style>
+  <body>
+
+    <ul>
+      <li><a class="MITHUNA"href="mithuna.html">ShowTrackr</a></li>
+      <li><a href="mithuna.html">Home</a></li>
+      <li><a href="add.html">Add</a></li>
+      <li style="float:right"><a href="sign.html">Signup</a></li>
+      <li style="float:right"><a href="login.html">Login</a></li>
+    </ul>
+    <br><br><br>
+
+
+<center>
+
+        <form class="form">
+          <header id="mithu">ADD TV SHOWS</header>
+      <div id="text">Name</div>
+        <input type="text" id="Name" name="Name"  placeholder ="Enter Tv shows Name"><br>
+      <button class="add" onclick="Add (Name.value)" >Add</button>
+      </form>
+</center>
+<script>
+   function Add(TvShowName){
+     var input = /^[A-Za-z]+$/;
+     if(TvShowName.match(input)){
+       document.getElementById('message').style.color = 'green';
+       document.getElementById('message').innerHTML =TvShowName + " has been added";
+     }
+     else {
+       document.getElementById('message').style.color = 'red';
+       document.getElementById('message').innerHTML = "Invalid TV Show Name";
+     }
+   }
+
+</script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>My first project</title>
+
+  </head>
+  <style >
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 2px 2px 2px black;
+}
+
+li {
+  display: inline;
+  float: left;
+  box-shadow: 2px 2px 2px  black;
+}
+
+
+
+li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px  black;
+}
+.MITHUNA{
+  background-color: yellow;
+}
+a{
+  color: black;
+  padding: 3PX 2PX;
+  text-decoration: none;
+}
+table, th, td {
+  border: none
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: left;
+}
+
+
+.container{
+	max-width:1200px;
+	margin:auto;
+	background:#f2f2f2;
+	overflow:auto;
+
+}
+
+.row{
+  margin: 0;
+}
+
+.gallery{
+	margin:2px;
+	border:2px solid #ccc;
+	float:left;
+	width:350px;
+  height: 500px;
+
+}
+
+.gallery img{
+	width:150%;
+	height:480px;
+
+}
+
+.desc{
+	paddding:80px;
+	text-align:center;
+}
+body{
+  background-size: cover;
+  background-color: #dcdee0;
+}
+
+
+
+  </style>
+  <body>
+    <P id="demo"></p>
+    <script src= " mithu.js"></script>
+  <ul>
+    <li><a class="MITHUNA"href="mithuna.html">ShowTrackr</a></li>
+    <li><a href="mithuna.html">Home</a></li>
+    <li><a href="add.html">Add</a></li>
+    <li style="float:right"><a href="sign.html">Signup</a></li>
+    <li style="float:right"><a href="login.html">Login</a></li>
+  </ul>
+  <br><br><br>
+   <center>
+      <p id="demo"></p>
+      <button onclick="#button ">0-9</button>
+      <button onclick="myfunction()">A</button>
+    <script>
+      function myfunction(){
+        document.getElementById("demo").innerHTML="Action"+ "<br>"+ "Adventure"+ "<br>" + "Animation";
+        }
+    </script>
+        <button onclick="#button">B</button>
+        <button onclick="myfunction1()">C</button>
+
+    <script>
+        function myfunction1(){
+          document.getElementById("demo").innerHTML="Children"+ "<br>"+ "Comedy" + "<br>"+ "Crime";
+        }
+      </script>
+
+         <button onclick="myfunction2()">D</button>
+
+      <script>
+      function myfunction2(){
+        document.getElementById("demo").innerHTML="Documentary"+ "<br>"+ "Drama";
+      }
+      </script>
+        <button onclick="#button">E</button>
+        <button onclick="myfunction3()">F</button>
+
+      <script>
+      function myfunction3(){
+        document.getElementById("demo").innerHTML="Family"+ "<br>"+ "Fantasy" +"<br>"+"Food";
+      }
+      </script>
+
+      <button onclick="#button">G</button>
+      <button onclick="myfunction4()">H</button>
+
+      <script>
+          function myfunction4(){
+              document.getElementById("demo").innerHTML="Home and garden"+ "<br>"+ "Horror";
+      }
+       </script>
+
+             <button onclick="#button">I</button>
+              <button onclick="#button">J</button>
+                <button onclick="#button">K</button>
+                  <button onclick="#button">L</button>
+                  <button onclick="myfunction5()">M</button>
+          <script>
+          function myfunction5(){
+              document.getElementById("demo").innerHTML="Mini series"+ "<br>"+ "Mystery";
+          }
+          </script>
+             <button onclick="myfunction6()">N</button>
+
+          <script>
+            function myfunction6(){
+              document.getElementById("demo").innerHTML="News";
+          }
+          </script>
+               <button onclick="#button">O</button>
+                <button onclick="#button">P</button>
+                 <button onclick="#button">Q</button>
+                 <button onclick="myfunction7()">R</button>
+          <script>
+          function myfunction7(){
+              document.getElementById("demo").innerHTML="Reality"+ "<br>"+ "Romance";
+          }
+          </script>
+
+              <button onclick="myfunction8()">S</button>
+      <script>
+      function myfunction8(){
+          document.getElementById("demo").innerHTML="Sci-Fi"+ "<br>"+ "Sport"+ "<br>"+"Suspense";
+      }
+      </script>
+           <button onclick="myfunction9()">T</button>
+    <script>
+       function myfunction9(){
+         document.getElementById("demo").innerHTML="Talk-Show"+ "<br>"+ "Thriller"+ "<br>"+"Travel";
+      }
+    </script>
+         <button onclick="#button">U</button>
+         <button onclick="#button">V</button>
+         <button onclick="#button">W</button>
+         <button onclick="#button">X</button>
+         <button onclick="#button">Y</button>
+         <button onclick="#button">Z</button>
+
+
+
+
+
+
+
+
+</center>
+
+<center>
+     <button>Action</button>
+     <button>Adventure</button>
+     <button>Animation</button>
+     <button>Children</button>
+     <button>Comedy</button>
+     <button>Crime</button>
+     <button>Documentary</button>
+     <button>Drama</button>
+     <button>Family</button>
+     <button>Fantasy</button>
+     <button>Food</button>
+     <button>Home and Garden</button>
+     <button>Horror</button>
+     <button>Mystery</button>
+     <button>News</button>
+     <button>Reality</button>
+     <button>Romance</button>
+     <button>Sci-Fi</button>
+     <button>Sport</button>
+     <button>Suspense</button>
+     <button>Talk Show</button>
+     <button>Thriller</button>
+     <button>Travel</button>
+   </center><br><br><br>
+
+   <table style="width:100%">
+     <tr>
+       <th style="float: left">TOP 12 SHOWS</th>
+       <input style="float: right" type=text box value="Search"> </input>
+     </tr>
+
+
+	</table>
+
+		<div class="container">
+
+      <div class="row">
+  			<div class="gallery">
+  				<img src="1578578.jpg">
+  					<div class="desc">
+            <a href="gameofthrones.html" target="_blank">Game of thrones</a>
+            </div>
+  			</div>
+
+
+
+              		   	<div class="gallery">
+              				<img src="screen-6.jpg">
+              					<div class="desc">super man</div>
+              			</div>
+            			</div>
+
+                  <div class="row" style="margin-left: 65px">
+                    <div class="gallery">
+                      <img src="maxresdefault.jpg">
+                        <div class="desc">Captian america civil war</div>
+                    </div>
+
+
+
+
+  			</div>
+      </div>
+
+		</div>
+
+</div>
+
+  </body>
+</html>
